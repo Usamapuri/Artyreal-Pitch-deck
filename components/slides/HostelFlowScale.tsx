@@ -24,63 +24,33 @@ const HostelFlowScale: React.FC = () => {
                     <span className="font-bold text-emerald-400 tracking-wider text-sm">HOSTEL OS</span>
                 </div>
                 
-                <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                    HostelFlow<br/>Property Management
+                <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+                    HostelFlow
                 </h2>
-
-                <div className="bg-emerald-900/30 border-l-4 border-emerald-500 p-4 rounded-lg mb-6">
-                    <p className="text-sm font-semibold text-emerald-400 mb-1">The Problem</p>
-                    <p className="text-zinc-300">
-                        Hostel owners manage beds, payments, and maintenance across fragmented spreadsheets—losing time and revenue to manual processes.
-                    </p>
-                </div>
                 
-                <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
-                    <strong className="text-white">HostelFlow</strong> is your all-in-one platform for property management, from check-in to rent collection. Handle student onboarding, bed assignments, automated billing, and maintenance—all in one secure place.
+                <p className="text-2xl text-zinc-300 mb-12 leading-relaxed max-w-2xl">
+                    All-in-one property management platform for modern student accommodation.
                 </p>
 
-                <div className="space-y-2 text-sm text-zinc-300 mb-8">
-                    <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                        <span>Visual bed assignments & pricing automation</span>
+                <div className="space-y-4 text-base text-zinc-300">
+                    <div className="flex items-start gap-3">
+                        <ShieldCheck className="w-5 h-5 text-emerald-400 mt-1" />
+                        <span>Visual bed assignments with automated pricing</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                        <span>Digital KYC, contracts & emergency contacts</span>
+                    <div className="flex items-start gap-3">
+                        <ShieldCheck className="w-5 h-5 text-emerald-400 mt-1" />
+                        <span>Digital onboarding and contract management</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                        <span>Automated rent collection & expense tracking</span>
+                    <div className="flex items-start gap-3">
+                        <ShieldCheck className="w-5 h-5 text-emerald-400 mt-1" />
+                        <span>Automated billing and payment tracking</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                        <span>Maintenance tickets with vendor coordination</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                        <span>Occupancy trends & revenue forecasting</span>
+                    <div className="flex items-start gap-3">
+                        <ShieldCheck className="w-5 h-5 text-emerald-400 mt-1" />
+                        <span>Maintenance coordination with vendors</span>
                     </div>
                 </div>
                 
-                <div className="grid grid-cols-2 gap-8">
-                    <div>
-                        <div className="text-4xl font-bold text-white mb-1">500+</div>
-                        <div className="text-xs text-emerald-400 uppercase font-bold tracking-widest">Beds Managed</div>
-                    </div>
-                    <div>
-                        <div className="text-4xl font-bold text-white mb-1">70%</div>
-                        <div className="text-xs text-emerald-400 uppercase font-bold tracking-widest">Admin Reduction</div>
-                    </div>
-                </div>
-
-                <div className="mt-10 flex gap-4">
-                    <div className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 transition-colors rounded-lg font-bold text-white cursor-pointer">
-                        Start Free Trial
-                    </div>
-                    <div className="px-6 py-3 border border-zinc-700 hover:border-zinc-500 transition-colors rounded-lg font-bold text-zinc-300 cursor-pointer">
-                        View Demo
-                    </div>
-                </div>
             </motion.div>
 
             {/* Right: CODED DASHBOARD VISUAL (HostelOS) */}

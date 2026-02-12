@@ -84,10 +84,10 @@ const CoworkingTech: React.FC = () => {
                 </p>
                 <ul className="space-y-3 border-t border-zinc-100 pt-4">
                     <li className="flex items-center gap-3 text-sm font-medium text-zinc-700">
-                        <Globe className="w-4 h-4 text-zinc-500" /> Blue Area & I-10 Branches
+                        <Globe className="w-4 h-4 text-zinc-500" /> Multi-Location Support
                     </li>
                     <li className="flex items-center gap-3 text-sm font-medium text-zinc-700">
-                        <Zap className="w-4 h-4 text-zinc-500" /> SSE Real-time Notifications
+                        <Zap className="w-4 h-4 text-zinc-500" /> Real-time Notifications
                     </li>
                 </ul>
             </motion.div>

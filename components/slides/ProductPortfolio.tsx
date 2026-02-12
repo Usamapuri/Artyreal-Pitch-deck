@@ -15,7 +15,7 @@ const ProductPortfolio: React.FC = () => {
     },
     {
       icon: Coffee,
-      name: "CalmKaaj",
+      name: "Coworkly",
       tagline: "Smart operations for coworking spaces.",
       color: "text-indigo-600",
       bg: "bg-indigo-50",

@@ -27,7 +27,7 @@ const CoworkingOverview: React.FC = () => {
                    transition={{ delay: 0.1 }}
                    className="text-5xl md:text-7xl font-bold mb-6 text-zinc-900"
                 >
-                    CalmKaaj<br/>
+                    Coworkly<br/>
                     <span className="text-orange-500">Smart Space Management</span>
                 </motion.h2>
 
@@ -39,7 +39,7 @@ const CoworkingOverview: React.FC = () => {
                 >
                     <p className="text-sm font-semibold text-orange-900 mb-1">The Problem</p>
                     <p className="text-zinc-700">
-                        Coworking members juggle multiple apps for room bookings, cafe orders, and credit management—creating friction and reducing space utilization.
+                        Coworking spaces struggle with fragmented systems for bookings, cafe orders, and member management—reducing efficiency and member satisfaction.
                     </p>
                 </motion.div>
                 
@@ -49,7 +49,7 @@ const CoworkingOverview: React.FC = () => {
                    transition={{ delay: 0.3 }}
                    className="text-lg text-zinc-600 leading-relaxed mb-6"
                 >
-                    <strong className="text-zinc-900">CalmKaaj</strong> is a single PWA that manages spaces, orders, payments, and member experience. From booking a meeting room in <strong>Blue Area</strong> to ordering coffee at <strong>I-10</strong>—it's all one tap away.
+                    <strong className="text-zinc-900">Coworkly</strong> is a unified PWA that manages spaces, orders, payments, and member experience—all in one seamless platform.
                 </motion.p>
 
                 <motion.div

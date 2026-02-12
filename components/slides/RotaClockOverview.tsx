@@ -42,7 +42,7 @@ const RotaClockOverview: React.FC = () => {
             >
                 <p className="text-sm font-semibold text-blue-900 mb-1">The Problem</p>
                 <p className="text-slate-700">
-                    Hospitality businesses lose thousands weekly on scheduling errors, last-minute no-shows, and manual roster management across multiple locations.
+                    Businesses lose thousands weekly on scheduling errors, last-minute no-shows, and manual roster management across multiple locations.
                 </p>
             </motion.div>
 
@@ -52,7 +52,7 @@ const RotaClockOverview: React.FC = () => {
                 transition={{ delay: 0.3 }}
                 className="text-lg text-slate-600 leading-relaxed mb-6"
             >
-                <strong className="text-slate-900">RotaClock</strong> is the real-time workforce OS that syncs schedules, tracks costs, and sends instant notifications—trusted by businesses like <strong className="text-slate-900">The Rope & Rock</strong>.
+                <strong className="text-slate-900">RotaClock</strong> is the real-time workforce OS that syncs schedules, tracks costs, and sends instant notifications across your entire organization.
             </motion.p>
 
             <motion.div 

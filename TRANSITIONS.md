@@ -34,7 +34,7 @@ These storyline sentences help create a smooth, cohesive narrative flow between 
 
 ---
 
-### 3. RotaClock → CalmKaaj
+### 3. RotaClock → Coworkly
 **Bridge:** Real-time Feature as Connection
 
 **Storyline Sentence:**
@@ -47,7 +47,7 @@ These storyline sentences help create a smooth, cohesive narrative flow between 
 
 ---
 
-### 4. CalmKaaj → HostelFlow
+### 4. Coworkly → HostelFlow
 **Bridge:** Multi-tenant Management Capability
 
 **Storyline Sentence:**
@@ -108,10 +108,10 @@ Throughout the presentation, reinforce these connecting threads:
 
 If the standard transitions feel repetitive in longer presentations, use these alternatives:
 
-### Alt: RotaClock → CalmKaaj
-> "Hospitality mastered scheduling. Now, let's see how that same precision serves coworking spaces with CalmKaaj."
+### Alt: RotaClock → Coworkly
+> "Hospitality mastered scheduling. Now, let's see how that same precision serves coworking spaces with Coworkly."
 
-### Alt: CalmKaaj → HostelFlow
+### Alt: Coworkly → HostelFlow
 > "Single locations solved. HostelFlow brings that smart management to multi-property operations."
 
 ### Alt: HostelFlow → frontench.io
@@ -123,8 +123,8 @@ If the standard transitions feel repetitive in longer presentations, use these a
 
 | Product | Category | Core Value Prop |
 |---------|----------|----------------|
-| **RotaClock** | Workforce OS | Real-time scheduling for hospitality |
-| **CalmKaaj** | Coworking OS | Single-tap space management |
+| **RotaClock** | Workforce OS | Real-time scheduling & workforce management |
+| **Coworkly** | Coworking OS | Unified space management platform |
 | **HostelFlow** | Property OS | Multi-property operations platform |
 | **frontench.io** | School OS | Unified school administration |
 
