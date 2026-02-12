@@ -38,7 +38,7 @@ const Closing: React.FC = () => {
              transition={{ delay: 0.2 }}
              className="text-white/60 leading-relaxed max-w-lg text-xl mb-12"
           >
-            From RotaClock to Primax, Artyreal products are engineered for operational excellence.
+            From RotaClock to frontench.io, Artyreal products are engineered for operational excellence.
           </motion.p>
 
           <motion.div
@@ -92,7 +92,7 @@ const Closing: React.FC = () => {
                         </div>
                         <div>
                             <div className="text-xs text-white/40 uppercase tracking-widest mb-1">HQ Location</div>
-                            <div className="text-2xl font-medium">Islamabad, Pakistan</div>
+                            <div className="text-2xl font-medium">I/10-3, Islamabad</div>
                         </div>
                     </div>
 
@@ -102,21 +102,23 @@ const Closing: React.FC = () => {
                         </div>
                         <div>
                             <div className="text-xs text-white/40 uppercase tracking-widest mb-1">Get in Touch</div>
-                            <div className="text-2xl font-medium">hello@artyreal.com</div>
+                            <div className="text-2xl font-medium">team@artyreal.com</div>
                         </div>
                     </div>
                 </div>
 
-                {/* QR Code Placeholder */}
+                {/* QR Code */}
                 <div className="pt-8 border-t border-white/10 flex items-center gap-6">
-                    <div className="bg-white p-2 rounded-xl shadow-lg">
-                        <div className="w-24 h-24 border-2 border-dashed border-slate-300 flex items-center justify-center bg-slate-50 rounded-lg text-slate-400">
-                            <QrCode className="w-10 h-10" />
-                        </div>
+                    <div className="bg-white p-3 rounded-xl shadow-lg">
+                        <img 
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://artyreal.com" 
+                            alt="QR Code for Artyreal.com"
+                            className="w-24 h-24 rounded-lg"
+                        />
                     </div>
                     <div>
                         <div className="text-lg font-bold mb-1">Scan to Connect</div>
-                        <div className="text-white/50 text-sm">Instant access to our portfolio</div>
+                        <div className="text-white/50 text-sm">Visit artyreal.com</div>
                     </div>
                 </div>
 
