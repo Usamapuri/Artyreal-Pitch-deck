@@ -25,12 +25,42 @@ const HostelFlowScale: React.FC = () => {
                 </div>
                 
                 <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                    Modern Hostel <br/> Management.
+                    HostelFlow<br/>Property Management
                 </h2>
+
+                <div className="bg-emerald-900/30 border-l-4 border-emerald-500 p-4 rounded-lg mb-6">
+                    <p className="text-sm font-semibold text-emerald-400 mb-1">The Problem</p>
+                    <p className="text-zinc-300">
+                        Hostel owners manage beds, payments, and maintenance across fragmented spreadsheets—losing time and revenue to manual processes.
+                    </p>
+                </div>
                 
-                <p className="text-xl text-zinc-400 mb-10 border-l-2 border-emerald-500 pl-6 leading-relaxed">
-                    Streamline operations with our powerful, multi-tenant SaaS platform. From <strong>Student Onboarding</strong> to <strong>Financial Analytics</strong>, handle it all in one secure place.
+                <p className="text-lg text-zinc-300 mb-8 leading-relaxed">
+                    <strong className="text-white">HostelFlow</strong> is your all-in-one platform for property management, from check-in to rent collection. Handle student onboarding, bed assignments, automated billing, and maintenance—all in one secure place.
                 </p>
+
+                <div className="space-y-2 text-sm text-zinc-300 mb-8">
+                    <div className="flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                        <span>Visual bed assignments & pricing automation</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                        <span>Digital KYC, contracts & emergency contacts</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                        <span>Automated rent collection & expense tracking</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                        <span>Maintenance tickets with vendor coordination</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                        <span>Occupancy trends & revenue forecasting</span>
+                    </div>
+                </div>
                 
                 <div className="grid grid-cols-2 gap-8">
                     <div>

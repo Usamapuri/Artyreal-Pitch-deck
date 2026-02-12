@@ -34,28 +34,52 @@ const RotaClockOverview: React.FC = () => {
                 <h3 className="text-xl font-medium text-slate-500">Precision Scheduling & Logistics</h3>
             </motion.div>
 
-            <motion.p 
+            <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="text-lg text-slate-600 leading-relaxed"
+                className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-lg mb-6"
             >
-                Empowering businesses like <strong className="text-slate-900">The Rope & Rock</strong> to eliminate roster chaos. Real-time shift management, automated cost calculation, and instant communication.
+                <p className="text-sm font-semibold text-blue-900 mb-1">The Problem</p>
+                <p className="text-slate-700">
+                    Hospitality businesses lose thousands weekly on scheduling errors, last-minute no-shows, and manual roster management across multiple locations.
+                </p>
+            </motion.div>
+
+            <motion.p 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="text-lg text-slate-600 leading-relaxed mb-6"
+            >
+                <strong className="text-slate-900">RotaClock</strong> is the real-time workforce OS that syncs schedules, tracks costs, and sends instant notifications—trusted by businesses like <strong className="text-slate-900">The Rope & Rock</strong>.
             </motion.p>
 
             <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
+                transition={{ delay: 0.4 }}
                 className="space-y-3"
             >
                 <div className="flex items-center gap-3 text-slate-700">
                     <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    <span>Cost-per-shift Analytics</span>
+                    <span>Live shift board with drag-and-drop</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-700">
                     <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    <span>Role-based Access Control</span>
+                    <span>Automated cost-per-shift calculation</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-700">
+                    <CheckCircle2 className="w-5 h-5 text-green-500" />
+                    <span>SMS & app notifications to staff</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-700">
+                    <CheckCircle2 className="w-5 h-5 text-green-500" />
+                    <span>Role-based access (managers vs. staff)</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-700">
+                    <CheckCircle2 className="w-5 h-5 text-green-500" />
+                    <span>Historical analytics & forecasting</span>
                 </div>
             </motion.div>
         </div>

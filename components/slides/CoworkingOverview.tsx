@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Smartphone, MapPin, Coffee, ArrowRight, Calendar } from 'lucide-react';
+import { Smartphone, MapPin, Coffee, ArrowRight, Calendar, CheckCircle2 } from 'lucide-react';
 
 const CoworkingOverview: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const CoworkingOverview: React.FC = () => {
                    className="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-orange-100 rounded-full w-fit"
                 >
                     <Smartphone className="w-4 h-4 text-orange-600" />
-                    <span className="text-xs font-bold tracking-widest text-orange-700 uppercase">CalmKaaj PWA</span>
+                    <span className="text-xs font-bold tracking-widest text-orange-700 uppercase">Coworking OS</span>
                 </motion.div>
                 
                 <motion.h2 
@@ -27,18 +27,58 @@ const CoworkingOverview: React.FC = () => {
                    transition={{ delay: 0.1 }}
                    className="text-5xl md:text-7xl font-bold mb-6 text-zinc-900"
                 >
-                    Smart Space. <br/>
-                    <span className="text-orange-500">Seamless Work.</span>
+                    CalmKaaj<br/>
+                    <span className="text-orange-500">Smart Space Management</span>
                 </motion.h2>
+
+                <motion.div
+                   initial={{ opacity: 0 }}
+                   animate={{ opacity: 1 }}
+                   transition={{ delay: 0.2 }}
+                   className="bg-orange-50 border-l-4 border-orange-600 p-4 rounded-lg mb-6"
+                >
+                    <p className="text-sm font-semibold text-orange-900 mb-1">The Problem</p>
+                    <p className="text-zinc-700">
+                        Coworking members juggle multiple apps for room bookings, cafe orders, and credit management—creating friction and reducing space utilization.
+                    </p>
+                </motion.div>
                 
                 <motion.p 
                    initial={{ opacity: 0 }}
                    animate={{ opacity: 1 }}
-                   transition={{ delay: 0.2 }}
-                   className="text-xl text-zinc-500 mb-8 leading-relaxed"
+                   transition={{ delay: 0.3 }}
+                   className="text-lg text-zinc-600 leading-relaxed mb-6"
                 >
-                    The operating system for modern coworking. From booking a meeting room in <strong>Blue Area</strong> to ordering coffee at the <strong>I-10 Location</strong>, it's all one tap away.
+                    <strong className="text-zinc-900">CalmKaaj</strong> is a single PWA that manages spaces, orders, payments, and member experience. From booking a meeting room in <strong>Blue Area</strong> to ordering coffee at <strong>I-10</strong>—it's all one tap away.
                 </motion.p>
+
+                <motion.div
+                   initial={{ opacity: 0 }}
+                   animate={{ opacity: 1 }}
+                   transition={{ delay: 0.4 }}
+                   className="space-y-2 text-sm text-zinc-700"
+                >
+                    <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                        <span>One-tap meeting room booking</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                        <span>Integrated cafe ordering system</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                        <span>Organization credit management</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                        <span>Multi-location support</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500" />
+                        <span>Real-time space availability</span>
+                    </div>
+                </motion.div>
             </div>
 
             {/* Right: CODED DASHBOARD VISUAL */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, BrainCircuit, Activity, Users, DollarSign, AlertCircle, Percent, Plus, FileText, CreditCard, Lock, MoreHorizontal } from 'lucide-react';
+import { GraduationCap, BrainCircuit, Activity, Users, DollarSign, AlertCircle, Percent, Plus, FileText, CreditCard, Lock, MoreHorizontal, CheckCircle2 } from 'lucide-react';
 
 const PrimaxOverview: React.FC = () => {
   return (
@@ -25,45 +25,70 @@ const PrimaxOverview: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-6xl md:text-8xl font-serif text-slate-900 mb-6"
+                className="text-5xl md:text-7xl font-serif text-slate-900 mb-6"
             >
-                Primax
+                frontench.io
             </motion.h2>
 
             <motion.h3 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-2xl font-medium text-slate-600 mb-8"
+                className="text-2xl font-medium text-slate-600 mb-6"
             >
                 The Operating System for <br/>
-                <span className="text-orange-500">Modern Schools</span>.
+                <span className="text-orange-500">Modern Schools</span>
             </motion.h3>
+
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="bg-orange-50 border-l-4 border-orange-600 p-4 rounded-lg mb-6 max-w-lg"
+            >
+                <p className="text-sm font-semibold text-orange-900 mb-1">The Problem</p>
+                <p className="text-slate-700">
+                    Schools run on fragmented spreadsheets for fees, attendance, and student records—creating administrative chaos and revenue leakage.
+                </p>
+            </motion.div>
 
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-                className="text-lg text-slate-500 leading-relaxed mb-8 max-w-lg"
+                transition={{ delay: 0.5 }}
+                className="text-lg text-slate-600 leading-relaxed mb-8 max-w-lg"
             >
-                The "Brain" of your institution. We replace fragmented spreadsheets and disconnected tools with a single, intelligent command center that makes administration indispensable.
+                <strong className="text-slate-900">frontench.io</strong> is your unified command center for admissions, academics, and administration. Replace disconnected tools with a single, intelligent platform that makes school management effortless.
             </motion.p>
-            
+
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="flex gap-4"
+                transition={{ delay: 0.6 }}
+                className="space-y-2 text-sm text-slate-700 mb-8 max-w-lg"
             >
-                <div className="flex items-center gap-2 text-sm text-slate-500 bg-white/50 px-4 py-2 rounded-full border border-orange-100">
-                    <BrainCircuit className="w-4 h-4 text-orange-500" />
-                    <span>Centralized Intelligence</span>
+                <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-500" />
+                    <span>Student enrollment & records management</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-slate-500 bg-white/50 px-4 py-2 rounded-full border border-orange-100">
-                    <Activity className="w-4 h-4 text-orange-500" />
-                    <span>Real-time Oversight</span>
+                <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-500" />
+                    <span>Automated fee collection & invoicing</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-500" />
+                    <span>Daily attendance tracking</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-500" />
+                    <span>Parent communication portal</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-500" />
+                    <span>Real-time financial dashboards</span>
                 </div>
             </motion.div>
+            
          </div>
 
          <motion.div 

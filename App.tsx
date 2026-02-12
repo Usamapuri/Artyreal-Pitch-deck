@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 
 // Import all slides
 import Intro from './components/slides/Intro';
+import ProductPortfolio from './components/slides/ProductPortfolio';
 import RotaClockOverview from './components/slides/RotaClockOverview';
 import RotaClockTech from './components/slides/RotaClockTech';
 import CoworkingOverview from './components/slides/CoworkingOverview';
@@ -17,6 +18,7 @@ import ArtyrealLogo from './components/ArtyrealLogo';
 
 const SLIDES = [
   Intro,
+  ProductPortfolio,
   RotaClockOverview,
   RotaClockTech,
   CoworkingOverview,
@@ -31,12 +33,13 @@ const SLIDES = [
 // Define theme for each slide for navigation contrast
 const SLIDE_THEMES: ('light' | 'dark')[] = [
   'light', // Intro (Cream)
+  'light', // ProductPortfolio (Cream)
   'light', // RotaClockOverview (White/Slate-50)
   'dark',  // RotaClockTech (Dark Slate)
   'light', // CoworkingOverview (White)
   'light', // CoworkingTech (Cream)
   'dark',  // HostelFlowScale (Black/Zinc)
-  'dark',  // HostelFlowModules (Dark Charcoal) - UPDATED to dark
+  'dark',  // HostelFlowModules (Dark Charcoal)
   'light', // PrimaxOverview (Cream)
   'light', // PrimaxFeatures (White)
   'dark'   // Closing (Dark)
