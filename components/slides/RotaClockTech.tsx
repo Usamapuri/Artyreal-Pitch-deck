@@ -4,12 +4,12 @@ import { Shield, Zap, Database, ArrowUp, Lock, Users, Activity, Layers } from 'l
 
 const RotaClockTech: React.FC = () => {
   return (
-    <div className="h-full w-full bg-[#0f172a] text-white flex flex-col justify-center px-6 md:px-24 relative overflow-hidden">
+    <div className="h-full w-full bg-[#0f172a] text-white flex flex-col justify-center px-4 md:px-8 lg:px-24 relative overflow-hidden">
       
       {/* Tech Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
         
         {/* LEFT: Business Value of Tech */}
         <div>
@@ -26,13 +26,13 @@ const RotaClockTech: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-4xl md:text-6xl font-bold mb-12 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 leading-tight"
             >
                 Built for <br/> 
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Scale & Speed.</span>
             </motion.h2>
 
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
                 <motion.div 
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const RotaClockTech: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <h4 className="font-bold text-xl mb-2 text-blue-100">Bank-Grade Data Integrity</h4>
+                        <h4 className="font-bold text-lg md:text-xl mb-2 text-blue-100">Bank-Grade Data Integrity</h4>
                         <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
                             Powered by PostgreSQL. Payroll and attendance logs are structurally unbreakable and audit-ready 24/7.
                         </p>
@@ -66,7 +66,7 @@ const RotaClockTech: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <h4 className="font-bold text-xl mb-2 text-cyan-100">Instant-Load Performance</h4>
+                        <h4 className="font-bold text-lg md:text-xl mb-2 text-cyan-100">Instant-Load Performance</h4>
                         <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
                             Next.js architecture ensures zero lag. Dashboards load instantly, meaning your workforce never waits on the software.
                         </p>
@@ -76,7 +76,7 @@ const RotaClockTech: React.FC = () => {
         </div>
 
         {/* RIGHT: The Command Chain (Visual Hierarchy) */}
-        <div className="relative h-[600px] flex flex-col justify-center items-center">
+        <div className="relative h-[500px] md:h-[600px] flex flex-col justify-center items-center">
             
             {/* Connecting Line illustrating Data Flow */}
             <div className="absolute left-1/2 top-10 bottom-10 w-px bg-gradient-to-b from-blue-500/50 via-slate-700 to-slate-800 -translate-x-1/2 z-0"></div>
@@ -95,7 +95,7 @@ const RotaClockTech: React.FC = () => {
                     <div className="flex items-center gap-3">
                         <div className="p-2 bg-blue-500/20 rounded-lg text-blue-400"><Lock size={20} /></div>
                         <div>
-                            <h3 className="font-bold text-white text-lg">Admin</h3>
+                            <h3 className="font-bold text-white text-base md:text-lg">Admin</h3>
                             <span className="text-xs text-blue-400 uppercase tracking-wider font-bold">Strategic Control</span>
                         </div>
                     </div>

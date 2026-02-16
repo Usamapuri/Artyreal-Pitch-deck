@@ -93,7 +93,7 @@ const App: React.FC = () => {
           initial={{ y: direction > 0 ? '100%' : '-100%', opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: direction > 0 ? '-20%' : '20%', opacity: 0 }}
-          transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
+          transition={{ duration: window.innerWidth < 768 ? 0.4 : 0.6, ease: [0.32, 0.72, 0, 1] }}
           className="h-full w-full absolute top-0 left-0"
         >
           <CurrentSlideComponent />
@@ -111,8 +111,8 @@ const App: React.FC = () => {
       
       {/* Brand Watermark - Hidden on Intro and Closing to avoid clutter */}
       {currentSlide !== 0 && currentSlide !== SLIDES.length - 1 && (
-        <div className={`fixed top-6 left-8 z-50 pointer-events-none opacity-80 ${currentTheme === 'dark' ? 'invert brightness-0 invert-100' : ''}`}>
-             <ArtyrealLogo className="w-24 h-auto" />
+        <div className={`fixed top-4 md:top-6 left-4 md:left-8 z-50 pointer-events-none opacity-80 ${currentTheme === 'dark' ? 'invert brightness-0 invert-100' : ''}`}>
+             <ArtyrealLogo className="w-16 md:w-24 h-auto" />
         </div>
       )}
     </div>

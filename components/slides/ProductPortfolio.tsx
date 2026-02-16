@@ -43,7 +43,7 @@ const ProductPortfolio: React.FC = () => {
   ];
 
   return (
-    <div className="h-full w-full bg-artyreal-bg flex flex-col justify-center px-6 md:px-24 relative overflow-hidden">
+    <div className="h-full w-full bg-artyreal-bg flex flex-col justify-center px-4 md:px-8 lg:px-24 relative overflow-hidden">
       {/* Decorative Background Element */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -59,7 +59,7 @@ const ProductPortfolio: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-serif text-artyreal-text mb-4 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-artyreal-text mb-4 leading-tight"
           >
             One Ecosystem. <br />
             <span className="text-artyreal-red">Four Industry Solutions.</span>
@@ -73,22 +73,22 @@ const ProductPortfolio: React.FC = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-12 md:mb-16">
           {products.map((product, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 + i * 0.15, duration: 0.6 }}
-              className={`group bg-white p-8 rounded-2xl border-2 border-artyreal-text/10 transition-all duration-300 cursor-default hover:-translate-y-2 shadow-lg ${product.borderHover} ${product.shadowHover}`}
+              className={`group bg-white p-5 md:p-8 rounded-2xl border-2 border-artyreal-text/10 transition-all duration-300 cursor-default hover:-translate-y-2 shadow-lg ${product.borderHover} ${product.shadowHover}`}
             >
               {/* Icon Container */}
-              <div className={`inline-flex p-4 ${product.bg} rounded-xl mb-6 transition-transform duration-300 group-hover:scale-110`}>
-                <product.icon className={`w-8 h-8 ${product.color}`} strokeWidth={1.5} />
+              <div className={`inline-flex p-3 md:p-4 ${product.bg} rounded-xl mb-4 md:mb-6 transition-transform duration-300 group-hover:scale-110`}>
+                <product.icon className={`w-7 h-7 md:w-8 md:h-8 ${product.color}`} strokeWidth={1.5} />
               </div>
 
               {/* Product Name */}
-              <h3 className="text-2xl font-bold text-artyreal-text mb-3">
+              <h3 className="text-xl md:text-2xl font-bold text-artyreal-text mb-2 md:mb-3">
                 {product.name}
               </h3>
 

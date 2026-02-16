@@ -28,9 +28,9 @@ const Navigation: React.FC<NavigationProps> = ({
   const indicatorInactive = theme === 'dark' ? "bg-white/30 w-2" : "bg-black/20 w-2";
 
   return (
-    <div className="fixed bottom-8 left-0 right-0 z-50 flex items-center justify-between px-12 pointer-events-none">
+    <div className="fixed bottom-4 md:bottom-8 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 pointer-events-none">
       {/* Slide Indicators */}
-      <div className="flex gap-3 pointer-events-auto">
+      <div className="flex gap-2 md:gap-3 pointer-events-auto">
         {Array.from({ length: totalSlides }).map((_, idx) => (
           <button
             key={idx}
@@ -44,20 +44,20 @@ const Navigation: React.FC<NavigationProps> = ({
       </div>
 
       {/* Controls */}
-      <div className="flex gap-4 pointer-events-auto">
+      <div className="flex gap-3 md:gap-4 pointer-events-auto">
         <button
           onClick={onPrev}
           disabled={currentSlide === 0}
-          className={`p-4 rounded-full backdrop-blur-xl border transition-all duration-300 disabled:opacity-0 disabled:translate-y-4 ${buttonStyle}`}
+          className={`p-3 md:p-4 rounded-full backdrop-blur-xl border transition-all duration-300 disabled:opacity-0 disabled:translate-y-4 ${buttonStyle}`}
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
         </button>
         <button
           onClick={onNext}
           disabled={currentSlide === totalSlides - 1}
-          className={`p-4 rounded-full backdrop-blur-xl border transition-all duration-300 disabled:opacity-0 disabled:translate-y-4 ${buttonStyle}`}
+          className={`p-3 md:p-4 rounded-full backdrop-blur-xl border transition-all duration-300 disabled:opacity-0 disabled:translate-y-4 ${buttonStyle}`}
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
         </button>
       </div>
     </div>
